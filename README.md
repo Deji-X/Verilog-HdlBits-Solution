@@ -1,2 +1,2 @@
 # VhdlBits-Solution
-My Solution To Vhdl Quizzes.
+My Solution To Verilog Hdl Quizzes.
