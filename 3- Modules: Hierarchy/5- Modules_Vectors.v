@@ -5,7 +5,7 @@ module top_module(
   output [7:0] q
 );
 
-  wire [7:0] three, two, one;
+  wire [7:0]one,two,three;
   
   my_dff8 ff1(.clk(clk), .d(d), .q(one));
   my_dff8 ff2(.clk(clk), .d(one), .q(two));
