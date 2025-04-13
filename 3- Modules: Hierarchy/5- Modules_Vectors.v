@@ -11,7 +11,7 @@ module top_module(
   my_dff8 ff2(.clk(clk), .d(one), .q(two));
   my_dff8 ff3(.clk(clk), .d(two), .q(three));
 
-  always @ (sel or in) begin
+  always @ (*) begin
         case(sel)
             0 : q = d ;
             1 : q = one;
