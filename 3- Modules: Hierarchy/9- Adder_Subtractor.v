@@ -12,6 +12,6 @@ module top_module(
   assign bsub = {32{sub}} ^ b;
   
   add16 add1(a[15:0], sub[15:0], sub, sum[15:0], cout1);
-  add16 add1(a[31:16], sub[31:16], cout1, sum[31:16], cout2);
+  add16 add2(a[31:16], sub[31:16], cout1, sum[31:16], cout2);
 
 endmodule
