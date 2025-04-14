@@ -6,8 +6,8 @@ module top_module(
     wire [15:0] cout1;
     wire [15:0] cout2;
     wire [15:0] cout3;
-    wire [31:16] sum2;
-    wire [31:16] sum3;
+    wire [15:0] sum2;
+    wire [15:0] sum3;
     
     add16 add_1( a[15:0], b[15:0], 0, sum[15:0], cout1);
     add16 add_2( b[31:16], b[31:16], 0, sum2, cout2);
