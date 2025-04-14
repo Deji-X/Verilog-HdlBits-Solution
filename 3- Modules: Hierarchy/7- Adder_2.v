@@ -4,4 +4,16 @@ module top_module(
   output [31:0] sum
 );
 
-  wire 
+  wire cout1,
+
+
+
+  	wire c
+    add16 adder_1(a[15:0], b[15:0], 0, sum[15:0], con1);
+    add16 adder_2(a[31:16], b[31:16], con1, sum[31:16], con2);
+endmodule
+
+module add1 ( input a, input b, input cin,   output sum, output cout );
+    assign sum  = a^b^cin;
+    assign cout = (a&b)|(a&cin)|(b&cin);
+endmodule
