@@ -4,16 +4,20 @@ module top_module(
   output [31:0] sum
 );
 
-  wire cout1,
+  wire cout1;
+  wire cout2;
 
+  add16 add_1(a[15:0], b[15:0], 0, sum[15:0], cout1);
+  add16 add_2(a[31:16], b[31:16], cout1, sum[15:0], cout2);
 
-
-  	wire c
-    add16 adder_1(a[15:0], b[15:0], 0, sum[15:0], con1);
-    add16 adder_2(a[31:16], b[31:16], con1, sum[31:16], con2);
 endmodule
 
-module add1 ( input a, input b, input cin,   output sum, output cout );
-    assign sum  = a^b^cin;
-    assign cout = (a&b)|(a&cin)|(b&cin);
+module add1 ( input a, input b, input cin, output sum, output cout );
+
+  assign sum = a ^ b ^ cin;
+  // The sum formula of a full adder is a xor b xor cin
+  
+  assign cout = (a & b) | (a & cin) | (b & cin);
+  // The cout formula of a full adder.
+
 endmodule
