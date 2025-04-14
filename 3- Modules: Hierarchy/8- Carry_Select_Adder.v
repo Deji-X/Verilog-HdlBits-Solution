@@ -9,7 +9,7 @@ module top_module(
     wire [15:0] sum3;
     
     add16 add_1(a[15:0], b[15:0], 0, sum[15:0], cout1);
-    add16 add_2(b[31:16], b[31:16], 0, sum2, cout2);
+    add16 add_2(a[31:16], b[31:16], 0, sum2, cout2);
     add16 add_3(a[31:16], b[31:16], 1, sum3, cout2);
     
     always @ (cout1, sum2, sum3) begin
