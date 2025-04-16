@@ -14,7 +14,7 @@ module top_module(
   //else assign out_assign = a; 
   //My little idea, might just be poppycock or bollocks!!
 
-  always @() begin
+    always @(*) begin
     if (sel_b=1'b1 & sel_b2= 1'b1) begin
       out_always = b;
     end
