@@ -14,15 +14,14 @@ module top_module(
 
   In a combinational always block, use blocking assignments. In a clocked always block, use non-blocking assignments.
   */
-  
-  assign out_assign = a ^ b;
-
-  always @(*)
-    out_always_comb = a ^ b;
-  end
-  
-  always @(posedge clk)
-    out_always_ff <= a ^ b;
-  end
-
+	assign out_assign = a ^ b;
+	
+	always @(*) begin
+		out_always_comb = a ^ b;
+	end
+		
+	always @(posedge clk) begin
+		out_always_ff <= a ^ b;
+	end
+		
 endmodule
