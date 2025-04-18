@@ -3,6 +3,6 @@ module top_module(
   output parity
 );
 
-  assign parity = ^ in[7:0] 
+  assign parity = ^ in[7:0]; 
   
 endmodule
