@@ -29,8 +29,8 @@ assign out = ena ? q : 1'bz;  // A tri-state buffer
     wire [7:0] unsigned1;
     
     //condition ? if_true : if_false
-    assign int1 = (a<b)? a:b; 
-    assign int2 = (unsigned0<c)? unsigned0:c;
+    assign unsigned0 = (a<b)? a:b; 
+    assign unsigned1 = (unsigned0<c)? unsigned0:c;
     assign min  = (unsigned1<d)? unsigned1:d;
     
 
