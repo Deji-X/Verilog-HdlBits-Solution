@@ -6,4 +6,6 @@ module top_module(
 
   assign z = (A == B) ? 1 : 0;
 
+  //assign z = (A[1:0]==B[1:0]);	// Comparisons produce a 1 or 0 result
+
 endmodule
