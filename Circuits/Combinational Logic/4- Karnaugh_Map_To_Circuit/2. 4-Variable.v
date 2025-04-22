@@ -12,6 +12,6 @@ module top_module(
   have completed the fullnote and left a drive link....*/
 
   assign out = (~a&~d) | (~b&~c) | (~a&b&c) | (a&c&d); //SOP
-  //assign out = (~a|~b|c|d) & (~a|b|~c|d) & (a|~b|c|~d) & (a|b|~c|~d) & (a|b|~c|d) & (a|b|c|~d);
+  //assign out = (a|b|~c|~d) & (a|~b|c|~d) & (~a|b|~c|d) & (~a|~b|c|d) & (~a|~b|c|~d) & (~a|~b|~c|d);
 
 endmodule
