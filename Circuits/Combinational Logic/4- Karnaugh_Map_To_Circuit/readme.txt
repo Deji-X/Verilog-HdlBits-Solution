@@ -1,7 +1,7 @@
 Verilog code for Karnaugh Maps..
-Understanding DO NOT CARE KARNAUGH MAPS.
 
 
+UNDERSTANDING DO NOT CARE CONDITIONS IN KARNAUGH MAPS:
 The electronics class of Lightning State College has been asked to build the lamp logic for a stationary bicycle exhibit at the local science museum. As a rider increases his pedaling speed, lamps will light on a bar graph display.
 
 No lamps will light for no motion. As speed increases, the lower lamp, L1 lights, then L1 and L2, then, L1, L2, and L3, until all lamps light at the highest speed. Once all the lamps illuminate, no further increase in speed will have any effect on the display.
