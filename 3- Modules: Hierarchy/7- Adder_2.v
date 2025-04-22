@@ -12,7 +12,7 @@ module top_module (
   add16 add_2(a[31:16], b[31:16], cout1, sum[31:16], cout2);
 endmodule
 
-module add1 ( input a, input b, input cin,   output sum, output cout );
+module add16( input a, input b, input cin,   output sum, output cout );
 
   assign sum = a ^ b ^ cin;
   // The sum formula of a full adder is a xor b xor cin
