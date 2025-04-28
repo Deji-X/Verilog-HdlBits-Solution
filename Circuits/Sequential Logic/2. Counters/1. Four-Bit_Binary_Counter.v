@@ -5,8 +5,10 @@ module top_module(
 );
 
   always @ (posedge clk) begin
-    if (reset) q <= 4'd0;
-    else q <= q + 4'd1;
+    if (reset)
+      q <= 0;
+    else 
+      q <= q + 1;
   end
 
   
