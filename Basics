@@ -1,0 +1,131 @@
+/* 2.FOUR WIRES////Wire4 xnor wiredecl
+module top_module(
+	input a, b, c,
+	output w, x, y, z
+);
+
+	assign w = a;
+	assign x = b;
+	assign y = b;
+	assign z = c;
+
+endmodule
+*/
+
+//3. INVERTER//Notgate
+/*module top_module(
+	input in,
+	output out
+);
+
+	assign out = ~ in;
+
+endmodule
+*/
+
+//4. ANDGATE
+/*module top_module(
+	input a, b,
+	output out);
+
+	assign out = a & b;
+
+
+endmodule
+*/
+
+//5. NORGATE
+/*
+module top_module(
+	input a, b,
+	output out	
+);
+
+	assign out = ~(a | b);
+
+endmodule
+*/
+
+//6. XNOR GATE
+/*
+module top_module(
+	input a, b,
+	output out,
+);
+
+	assign out = a ^ b;
+
+endmodule
+*/
+
+//7. WIRE DECLARATION
+/*module top_module(
+	input a,
+	input b,
+	input c,
+	input d,
+	output out,
+	output out_n
+);
+
+	wire and1;
+	wire and2;
+
+	assign and1 = a & b;
+	assign and2 = c & d;
+ 
+	assign out = and1 | and2;
+	assign out_n = ~out;
+
+endmodule
+*/
+
+//Alternative solution
+/*
+module top_module(
+	input a, b, c, d,
+	output out, out_n
+);
+
+	wire and1, and2;
+	wire or1;
+
+	assign and1 = a & b;
+	assign and2 = c & d;
+	assign or1 = and1 | and2;
+
+	assign out = or1;
+	assign out_n = ~or1;
+
+endmodule
+*/
+
+// 8. 7458 CHIP
+//Verilog is Cap sensitive..
+/*
+module top_module(
+	input p1a, p1b, p1c, p1d, p1e, p1f,
+	input p2a, p2b, p2c, p2d,
+	output p1y, 
+	output p2y);
+
+	wire AND1a;
+	wire AND1b;
+	wire AND2a;
+	wire AND2b;
+	wire NOR1;
+	wire NOR2;
+
+	assign AND1a = p1a & p1b & p1c;
+	assign AND1b = p1d & p1e & p1f;
+	assign AND2a = p2a & p2b;
+	assign AND2b = p2c & p2d;
+	assign NOR1 = AND1a | AND1b;
+	assign NOR2 = AND2a | AND2b;
+	assign p1y = NOR1;
+	assign p2y = NOR2;
+
+endmodule
+
+*/
+
