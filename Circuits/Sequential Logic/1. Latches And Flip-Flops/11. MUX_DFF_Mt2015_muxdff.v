@@ -4,19 +4,8 @@ module top_module(
   input r_in,
   input q_in,
   output req Q
-); 
-  /*
-  always @(posedge clk)
-        Q<=L ? r_in : q_in;
+);
   
-  always @ (posedge clk) begin
-        case (L)
-            1'b0 : Q <= q_in;
-            1'b1 : Q <= r_in;
-        endcase    
-    end 
-  */
-
   wire Q0, Q1, Q2;
   wire r0, r1, r2;
   wire D0, D1, D2;
@@ -38,5 +27,6 @@ module top_module(
             1'b1 : Q <= r_in;
         endcase    
     end 
+  // After it was solved, the assign/always, was easy to implement.
   
 endmodule
