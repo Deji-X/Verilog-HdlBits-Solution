@@ -5,10 +5,14 @@ module top_module(
   input [3:0] y,
   output [4:0] sum
 );
+  //There is another Solution including the genvar function...I WILL GET THE CODE AS SOON AS POSSIBLE
 
-  FullAdder FA0 (x[0], y[0], sum[0]);
-  FullAdder FA1 (x[1], y[1], sum[1]);
-  FullAdder FA2 (x[2], y[2], sum[2]);
-  FullAdder FA3 (x[3], y[3], sum[3]);
+	// This circuit is a 4-bit ripple-carry adder with carry-out.
+	assign sum = x+y;	// Verilog addition automatically produces the carry-out bit.
 
+	// Verilog quirk: Even though the value of (x+y) includes the carry-out, (x+y) is still considered to be a 4-bit number (The max width of the two operands).
+	// This is correct:
+	// assign sum = (x+y);
+	// But this is incorrect:
+	// assign sum = {x+y};	// Concatenation operator: This discards the carry-out
 endmodule
