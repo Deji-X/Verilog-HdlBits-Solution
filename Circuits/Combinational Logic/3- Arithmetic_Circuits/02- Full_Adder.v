@@ -6,4 +6,8 @@ module top_module(
   assign cout = (a & b) | (a & cin) | (b & cin);
   assign sum = a ^ b ^ cin;
 
+  /*
+  assign {sum,cout} = a + b + cin;
+  */
+
 endmodule
