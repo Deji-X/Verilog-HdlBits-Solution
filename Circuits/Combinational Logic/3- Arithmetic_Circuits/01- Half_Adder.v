@@ -5,5 +5,8 @@ module top_module(
 
   assign cout = a & b;
   assign sum = a ^ b;
+  /*
+  assign {sum,cout} = a + b;
+  */
 
 endmodule
