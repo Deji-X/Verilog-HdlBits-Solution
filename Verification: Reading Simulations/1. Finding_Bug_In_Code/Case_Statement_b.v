@@ -1,5 +1,6 @@
 /*
 Another idea for the solution of the case statement.
+OKay...
 */
 
 module top_module(
