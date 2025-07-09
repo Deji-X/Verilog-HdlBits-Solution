@@ -5,6 +5,7 @@ module top_module(
   input [3:0] y,
   output [4:0] sum
 );
+/*
   //There is another Solution including the genvar function...I WILL GET THE CODE AS SOON AS POSSIBLE
 
 	// This circuit is a 4-bit ripple-carry adder with carry-out.
@@ -15,4 +16,30 @@ module top_module(
 	// assign sum = (x+y);
 	// But this is incorrect:
 	// assign sum = {x+y};	// Concatenation operator: This discards the carry-out
+*/
+	wire cout [3:0];
+	genvar i;
+	generate
+		for (i=0; i<4; i++) begin:fa
+			if(i!=0) fa inst(x[i], y[i], cout[i-1], sum[i], cout[i]);
+
+			else fa inst(x[0], y[0], 0, sum[0], cout[0]);
+		end
+	endgenerate
+
+	assign sum[4] = cout[3];
 endmodule
+
+module fa(input x,
+	  input y,
+	  input cin,
+	  output sum,
+	  output cout);
+
+	assign sum = (x^y^z);
+	assign cout = [x&y] | [x&cin] | [y&cin];
+	// assign {cout, sum} = x+y+cin;
+
+endmodule
+
+
