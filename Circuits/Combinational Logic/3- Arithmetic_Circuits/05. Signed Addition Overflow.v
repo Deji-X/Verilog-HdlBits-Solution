@@ -8,7 +8,7 @@ module top_module(
 );
 
   assign s = a + b;
-  assign overflow = ;
+  assign overflow = [7];
 
 
 endmodule
