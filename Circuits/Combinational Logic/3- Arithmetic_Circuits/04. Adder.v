@@ -5,6 +5,26 @@ module top_module(
   input [3:0] y,
   output [4:0] sum
 );
+	wire [3:0] cout;
+
+	FA FA1 (x[0], y[0], 0, cout[0], sum[0]);
+	FA FA2 (x[1], y[1], cout[0], cout[1]. sum[1]);
+	FA FA3 (x[2], y[2], cout[1], cout[2], sum[2]);
+	FA FA4 (x[3], y[3], cout[2], sum[4], sum[3]);
+
+endmodule
+
+module FA(
+	input x,
+	input y,
+	input cin,
+	output cout,
+	output sum
+);
+	assign {cout,sum} = (x+y+cin);
+
+endmodule
+	
 /*
   //There is another Solution including the genvar function...I WILL GET THE CODE AS SOON AS POSSIBLE
 
@@ -16,7 +36,7 @@ module top_module(
 	// assign sum = (x+y);
 	// But this is incorrect:
 	// assign sum = {x+y};	// Concatenation operator: This discards the carry-out
-*/
+
 	wire cout [3:0];
 	genvar i;
 	generate
@@ -39,7 +59,7 @@ module fa(input x,
 	assign sum = (x^y^z);
 	assign cout = [x&y] | [x&cin] | [y&cin];
 	// assign {cout, sum} = x+y+cin;
-
+*/
 endmodule
 
 
