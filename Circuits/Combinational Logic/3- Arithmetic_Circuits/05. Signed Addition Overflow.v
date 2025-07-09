@@ -8,7 +8,9 @@ module top_module(
 );
 
   assign s = a + b;
-  assign overflow = [7];
+  assign overflow = a[7]&b[7]&~s[7] | ~a[7]&~b[7]&s[7];
+  
+  //assign overflow = (a[7] == b[7]) && (s[7] != a[7]);
 
 
 endmodule
