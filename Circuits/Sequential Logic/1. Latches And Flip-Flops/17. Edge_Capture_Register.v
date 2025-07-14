@@ -10,6 +10,5 @@ module top_module(
     out <= reset ? 0 : ((~in&SR) | out);
   end
 
-  
 
 endmodule
