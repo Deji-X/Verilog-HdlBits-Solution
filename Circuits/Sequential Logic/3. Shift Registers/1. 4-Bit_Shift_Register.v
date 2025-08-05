@@ -12,8 +12,12 @@ module top_module(
       q <= 0;
     else if(load)
       q <= data;
-    else
+    else if (ena)
+      q <= q[3:1];
+  end
+    /*else
       q <= ena ? q>>1 : q;
   end
+  */
 
 endmodule
