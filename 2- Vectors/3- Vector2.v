@@ -9,4 +9,8 @@ module top_module(
 // Again, order of assignment does not matter
   // Assign does not create the wires but a relationship between wires.
   // Hence, whichsoever you assign first bares no effect.
+
+  /* Now we use concatenation...
+  assign out = {in [7:0], in[15:8], in[23:16], in[31:24]};
+  */
 endmodule
