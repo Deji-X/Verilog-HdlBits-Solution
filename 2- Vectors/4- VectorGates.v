@@ -8,4 +8,12 @@ module top_module(
   assign out_or_logical = a || b;
   assign out_not[5:3] = ~b;
   assign out_not[2:0] = ~a;
+
+  /*
+  concatenation here is how it works here;
+  assign out_not = [ ~b, ~a];
+  since the output is 6 bits and the inputs are 3 btis...so the compiler automatically,
+  divides them, same goes for any other set of bits unless there is an overflow and 
+  designated input to the output so you assign them specifically.
+  */
 endmodule
