@@ -5,4 +5,7 @@ module top_module(
     assign x = b;
     assign y = b;
     assign z = c;
+
+    // shorter;
+    // assign w = a, x = b, y = b, z = c;
 endmodule
