@@ -6,7 +6,11 @@ module top_module(
     output wire [7:0] out_lo);
     //The unpacked dimensions are declared after the name. They are generally used to declare memory arrays. 
 	//reg [7:0] mem [255:0];   // 256 unpacked elements, each of which is a 8-bit packed vector of reg.
-    
+
+
+	/*you can concantenate the output so the code looks somewhat like this..
+ 	assign {out_hi, out_lo} = in;
+	*/
     assign out_hi = in[15:8];
     assign out_lo = in[7:0];
 endmodule
