@@ -14,10 +14,10 @@ module top_module(
             q<=data;
         else begin
             case(ena)
-                'b00: q<={q[0],q[99:1]};
-                'b01: q<={q[98:0],q[99]};
-                'b10: q<={q[98:0],q[99]};
-                'b11: q<={q[98:0],q[99]};
+              'b00: q<={q[62:0], 1'b0};
+              'b01: q<={q[55:0], 8'b0};
+              'b10: q <= {q[63], q[63:1]};
+              'b11: q<={{8{q[63]}}, q[63:8]};
                 default: q<=q;
             endcase
         end
