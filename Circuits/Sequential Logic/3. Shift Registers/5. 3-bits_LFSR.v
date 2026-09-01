@@ -35,21 +35,12 @@ module top_module(
     endcase
   end
 
-  /*always @(posedge Clock) begin
-    case (L)
-        1'b0: begin
-            Q0 <= Q2;
-            Q1 <= Q0;
-            Q2 <= Q1 ^ Q2;
-        end
-
-        1'b1: begin
-            Q0 <= r0;
-            Q1 <= r1;
-            Q2 <= r2;
-        end
-    endcase
-end
+  /*
+  always @(posedge Clock) begin
+        Q0 <= D0;
+        Q1 <= D1;
+        Q2 <= D2;
+    end
   */
 
 endmodule
