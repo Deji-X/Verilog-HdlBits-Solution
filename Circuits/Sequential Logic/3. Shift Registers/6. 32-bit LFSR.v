@@ -9,6 +9,12 @@ module top_module(
     end
     else begin
       if (q[0]) begin
-        q <= {} 
+        q <= {q[0], q[31:1]} ^  32'h10000000001000000000000000000011;
+      end
+      else begin
+        q <= {q[0], q[31:1]};
+      end
+    end
+  end
 
 endmodule
