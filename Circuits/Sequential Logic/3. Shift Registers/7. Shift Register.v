@@ -7,32 +7,38 @@ module top_module(
 );
   wire Q0, Q1, Q2, Q3;
   wire D0, D1, D2, D3;
+  
+  reg q0, q1, q2;
 
-    reg q0, q1, q2;
+  // Q inouts
+  assign Q0 = q0;
+  assign Q1 = q1;
+  assign Q2 = q2;
+  assign Q3 = q3;
+  
+  // D inputs
+  assign D0 = in;
+  assign D1 = QO;
+  assign D2 = Q1;
+  assign D3 = Q2;
 
-    always @(posedge clk) begin
-        if (reset)
-            q0 <= 1'b0;
-        else
-            q0 <= ~q0;
+  // Four D flip-flops
+  always @(posedge clk) begin
+    if (!resetn) begin
+      q0 <= 1'b0;
+      q1 <= 1'b0;
+      q2 <= 1'b0;
+      q3 <= 1'b0;
     end
-
-    always @(posedge q0) begin
-        if (reset)
-            q1 <= 1'b0;
-        else
-            q1 <= ~q1;
+    else begin
+      q0 <= D1;
+      q1 <= D2;
+      q2 <= D3;
+      q3 <= D3;
     end
+  end
 
-    always @(posedge q1) begin
-        if (reset)
-            q2 <= 1'b0;
-        else
-            q2 <= ~q2;
-    end
-
-    assign q = {q2, q1, q0};
+  assign out = Q3;
 
 endmodule
-
-endmodule
+  
