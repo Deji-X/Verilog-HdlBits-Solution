@@ -10,13 +10,32 @@ module top_module(
 
   always @(*) begin  //This is a combinational always block
       //  State transition logic
+    case (state)
+      A: begin
+        if(!in)
+          next_state = B;
+        else
+          next_state = A;
+      end
+
+      B: begin
+        if (!in)
+          next_state = A;
+        else
+          next_state = B;
+      end
+    endcase
   end
 
-  always @ (posedge clk, posedge reset) begin  // This is a sequential always block
+  always @ (posedge clk, posedge areset) begin  // This is a sequential always block
     // State flip-flops with asynchronous reset
+    if(areset)
+      state <= B;
+    else
+      state <= next_state;
   end
 
   // Output logic
-  // assign out = (state == ....);
+  assign out = (state == B);
 
 endmodule
