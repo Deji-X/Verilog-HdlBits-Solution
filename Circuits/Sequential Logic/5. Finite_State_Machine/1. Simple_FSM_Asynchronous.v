@@ -7,7 +7,7 @@ module top_module(
 
   parameter A=0, B=1;
   reg state, next_state;
-
+hhh
   always @(*) begin  //This is a combinational always block
       //  State transition logic
     case (state)
