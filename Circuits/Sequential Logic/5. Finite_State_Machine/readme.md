@@ -3,9 +3,9 @@
 
 
 2. Simple FSM 1(Synchronous Reset) - Fsm1s
-<img width="629" height="493" alt="Screenshot 2026-09-27 145859" src="https://github.com/user-attachments/assets/73f0c7bf-13c6-4af9-b960-0ff5f77057f0" />
-   
+<img width="620" height="454" alt="Screenshot 2026-09-27 151359" src="https://github.com/user-attachments/assets/edf1dddf-90df-4b39-9619-16b8020b38c7" />
 
+   
 3. Simple FSM 2(Asynchronous Reset) - Fsm1s
 <img width="629" height="493" alt="Screenshot 2026-09-27 145859" src="https://github.com/user-attachments/assets/43d2db02-dac7-495b-88a9-b64926be274f" />
 
