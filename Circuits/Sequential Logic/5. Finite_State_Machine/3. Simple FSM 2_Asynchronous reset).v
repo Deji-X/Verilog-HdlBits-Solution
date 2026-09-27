@@ -9,14 +9,34 @@ module top_module(
     reg state, next_state;
 
     always @(*) begin
+        case (state)
+            OFF:begin
+                if(j)
+                    next_state = ON;
+                else
+                    next_state = OFF;
+            end
+            
+            ON: begin
+                if (k)
+                    next_state = OFF;
+                else
+                    next_state = ON;
+            end
+        endcase
         // State transition logic
     end
 
     always @(posedge clk, posedge areset) begin
+        if (areset)
+            state <= OFF;
+        else
+            state <= next_state;
         // State flip-flops with asynchronous reset
     end
 
     // Output logic
-    // assign out = (state == ...);
+    assign out = (state == ON);
 
 endmodule
+
