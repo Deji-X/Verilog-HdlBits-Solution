@@ -1,4 +1,4 @@
-1. Simple FSM 1 (Asynchronous Reset) - Fsm1
+<img width="654" height="563" alt="Screenshot 2026-09-28 020447" src="https://github.com/user-attachments/assets/d75f1b73-9737-4edd-9b0f-6cedbfb85846" />1. Simple FSM 1 (Asynchronous Reset) - Fsm1
 <img width="617" height="231" alt="Screenshot 2026-09-27 150403" src="https://github.com/user-attachments/assets/14aa6eff-e988-4f3b-b523-52d640900638" />
 
 
@@ -23,18 +23,86 @@
 
 
 7. Simple FSM 3 (asynchronous reset) - Fsm3
+<img width="620" height="494" alt="Screenshot 2026-09-28 020328" src="https://github.com/user-attachments/assets/5b50864d-7e45-4991-af36-284de9f0dc1b" />
 
 
-
-
-8. Simple FSM 3 (synchronous reset) -
+8. Simple FSM 3 (synchronous reset) - Fsm3s
+<img width="627" height="282" alt="Screenshot 2026-09-28 020415" src="https://github.com/user-attachments/assets/497a62c1-2ff0-437f-a454-53ac4ab6d86f" />
 
 
 9. Design a Moore FSM -
-
+<img width="654" height="563" alt="image" src="https://github.com/user-attachments/assets/efd53e0c-d244-4bb1-9372-b674638d7e0a" />
 
 
 10. Lemmings 1
+<img width="630" height="523" alt="Screenshot 2026-09-28 020746" src="https://github.com/user-attachments/assets/80fd8ef4-f000-4aae-b9d9-1db7913d2e49" />
+
+
 11. Lemmings 2
+<img width="656" height="621" alt="Screenshot 2026-09-28 020818" src="https://github.com/user-attachments/assets/9bb81f59-4b74-4e16-85d1-2f296d3fd35d" />
 
 
+12. Lemmings 3
+<img width="661" height="560" alt="Screenshot 2026-09-28 020859" src="https://github.com/user-attachments/assets/9c290fe6-f6ab-46f5-aef9-94e8e72398a5" />
+<img width="660" height="443" alt="Screenshot 2026-09-28 020925" src="https://github.com/user-attachments/assets/ea66c951-6ac1-4746-bb9f-eadd372d1c34" />
+
+
+13. Lemmings 4
+<img width="664" height="543" alt="Screenshot 2026-09-28 021001" src="https://github.com/user-attachments/assets/90d3a27e-2ad9-44c1-9f7b-0c1e3b93c662" />
+<img width="646" height="621" alt="Screenshot 2026-09-28 021017" src="https://github.com/user-attachments/assets/f9e940c1-1794-4e2e-8212-63b9116ddbec" />
+
+   
+14. One-hot FSM
+<img width="652" height="580" alt="Screenshot 2026-09-28 021041" src="https://github.com/user-attachments/assets/26147bea-43ab-4235-b055-2ee8881f1ae2" />
+
+
+15. PS/2 Packet Parser - Fsm ps2
+The PS/2 mouse protocol sends messages that are three bytes long. However, within a continuous byte stream, it's not obvious where messages start and end. The only indication is that the first byte of each three byte message always has bit[3]=1 (but bit[3] of the other two bytes may be 1 or 0 depending on data).
+
+We want a finite state machine that will search for message boundaries when given an input byte stream. The algorithm we'll use is to discard bytes until we see one with bit[3]=1. We then assume that this is byte 1 of a message, and signal the receipt of a message once all 3 bytes have been received (done).
+
+The FSM should signal done in the cycle immediately after the third byte of each message was successfully received.
+<img width="661" height="622" alt="Screenshot 2026-09-28 022224" src="https://github.com/user-attachments/assets/b36f2f33-f04e-4422-8d00-d2d93a73aeec" />
+
+
+16. PS/2 Packet Parser And Datapath - Fsm ps2data
+<img width="658" height="560" alt="Screenshot 2026-09-28 022450" src="https://github.com/user-attachments/assets/bea269c7-6abf-4c91-a02e-67282e99c332" />
+
+
+17. Serial Receiver
+<img width="660" height="633" alt="Screenshot 2026-09-28 022528" src="https://github.com/user-attachments/assets/02ce8d07-20c4-4c8c-92f8-ffa04cd15a48" />
+
+
+18. Serial Receiver And Datapath - Fsm serialdata
+<img width="663" height="564" alt="Screenshot 2026-09-28 022558" src="https://github.com/user-attachments/assets/2f9d9716-cedf-43ee-b099-dcedc7ce2cd1" />
+
+
+19. Serial Receiver With Parity Checking
+
+20. Sequence Recognition
+
+21. Q8: Design A Mealy FSM
+
+22. Q5a: Serial Two's Complementer (Moore FSM)
+
+23. Q5b: Serial Two's Complementer (Mealy FSM)
+
+24. Q3a: FSM
+
+25. Q3b: FSM
+
+26. Q3c: FSM Logic
+
+27. Q6b: FSM Next-State Logic
+
+28. Q6c: FSM One-Hot Next-State Logic
+
+29. Q6: FSM
+
+30. Q2a: FSM
+
+31. Q2b: One-Hot FSM Equations
+
+32. Q2a: FSM
+
+33. Q2b: Another FSM
