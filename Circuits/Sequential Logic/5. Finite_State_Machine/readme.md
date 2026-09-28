@@ -24,6 +24,8 @@
 
 7. Simple FSM 3 (asynchronous reset) - Fsm3
 <img width="620" height="494" alt="Screenshot 2026-09-28 020328" src="https://github.com/user-attachments/assets/5b50864d-7e45-4991-af36-284de9f0dc1b" />
+<img width="626" height="475" alt="Screenshot 2026-09-28 034024" src="https://github.com/user-attachments/assets/ee6fd1fe-3efa-4bd3-8fde-626532897ace" />
+
 
 
 8. Simple FSM 3 (synchronous reset) - Fsm3s
