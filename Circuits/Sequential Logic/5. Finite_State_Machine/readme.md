@@ -138,3 +138,5 @@
 
 
 33. Q2b: Another FSM
+<img width="663" height="501" alt="Screenshot 2026-09-28 235051" src="https://github.com/user-attachments/assets/433157d6-408d-4ea6-9a01-c4096bf652f2" />
+
