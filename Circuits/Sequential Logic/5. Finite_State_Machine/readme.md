@@ -103,10 +103,16 @@ The FSM should signal done in the cycle immediately after the third byte of each
 
 
 24. Q3a: FSM
+<img width="662" height="627" alt="Screenshot 2026-09-28 233217" src="https://github.com/user-attachments/assets/57574170-c0a3-48a6-87f4-20fec5f4ad36" />
+
 
 25. Q3b: FSM
+<img width="653" height="527" alt="Screenshot 2026-09-28 233259" src="https://github.com/user-attachments/assets/6d0e29e5-a772-4fa0-b9fe-28356c03c5bc" />
+
 
 26. Q3c: FSM Logic
+<img width="661" height="617" alt="Screenshot 2026-09-28 233323" src="https://github.com/user-attachments/assets/912a3ea8-432f-4a28-b478-b6f8e19dc08b" />
+
 
 27. Q6b: FSM Next-State Logic
 
