@@ -94,7 +94,6 @@ The FSM should signal done in the cycle immediately after the third byte of each
 <img width="665" height="502" alt="Screenshot 2026-09-28 233004" src="https://github.com/user-attachments/assets/f11c9b40-6475-48b4-a0c7-a2e3366368eb" />
 
 
-
 22. Q5a: Serial Two's Complementer (Moore FSM)
 
 23. Q5b: Serial Two's Complementer (Mealy FSM)
