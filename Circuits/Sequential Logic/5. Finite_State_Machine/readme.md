@@ -125,8 +125,12 @@
 
 
 30. Q2a: FSM
+<img width="669" height="622" alt="Screenshot 2026-09-28 234716" src="https://github.com/user-attachments/assets/ac4b6748-512b-4d3d-9e90-02f7a82d8ded" />
+
 
 31. Q2b: One-Hot FSM Equations
+<img width="666" height="629" alt="Screenshot 2026-09-28 234739" src="https://github.com/user-attachments/assets/b00241da-6886-4a55-94ac-d2acf223835f" />
+
 
 32. Q2a: FSM
 
