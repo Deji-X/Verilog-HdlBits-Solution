@@ -80,6 +80,12 @@ The FSM should signal done in the cycle immediately after the third byte of each
 
 
 19. Serial Receiver With Parity Checking
+<img width="666" height="555" alt="Screenshot 2026-09-28 232231" src="https://github.com/user-attachments/assets/3e754aa7-d906-4360-bb68-53c481caa57d" />
+<img width="662" height="627" alt="Screenshot 2026-09-28 232245" src="https://github.com/user-attachments/assets/c8765834-52af-4230-826b-f27e051a1f2b" />
+
+
+kl
+kl
 
 20. Sequence Recognition
 
