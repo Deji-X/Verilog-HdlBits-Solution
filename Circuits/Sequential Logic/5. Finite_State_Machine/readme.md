@@ -111,10 +111,18 @@
 
 
 27. Q6b: FSM Next-State Logic
+<img width="665" height="554" alt="Screenshot 2026-09-28 234252" src="https://github.com/user-attachments/assets/114288c5-b8ee-45f5-84c4-5e399af17474" />
+<img width="658" height="363" alt="Screenshot 2026-09-28 234312" src="https://github.com/user-attachments/assets/d43c9d7f-ab54-4acf-adce-5921b0705f99" />
+
 
 28. Q6c: FSM One-Hot Next-State Logic
+<img width="664" height="559" alt="Screenshot 2026-09-28 234338" src="https://github.com/user-attachments/assets/102974cc-0c28-41bc-a81e-7a8f2ff5133a" />
+<img width="656" height="391" alt="Screenshot 2026-09-28 234348" src="https://github.com/user-attachments/assets/66f94c9a-6b9f-4fa4-afda-f3a68131513b" />
+
 
 29. Q6: FSM
+<img width="664" height="615" alt="Screenshot 2026-09-28 234409" src="https://github.com/user-attachments/assets/5c524727-a509-48bb-9138-34db6eb66816" />
+
 
 30. Q2a: FSM
 
