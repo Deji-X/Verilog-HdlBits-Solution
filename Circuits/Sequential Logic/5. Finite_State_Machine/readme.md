@@ -1,4 +1,4 @@
-<img width="654" height="563" alt="Screenshot 2026-09-28 020447" src="https://github.com/user-attachments/assets/d75f1b73-9737-4edd-9b0f-6cedbfb85846" />1. Simple FSM 1 (Asynchronous Reset) - Fsm1
+1. Simple FSM 1 (Asynchronous Reset) - Fsm1
 <img width="617" height="231" alt="Screenshot 2026-09-27 150403" src="https://github.com/user-attachments/assets/14aa6eff-e988-4f3b-b523-52d640900638" />
 
 
