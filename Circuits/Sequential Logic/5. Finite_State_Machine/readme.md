@@ -84,10 +84,11 @@ The FSM should signal done in the cycle immediately after the third byte of each
 <img width="662" height="627" alt="Screenshot 2026-09-28 232245" src="https://github.com/user-attachments/assets/c8765834-52af-4230-826b-f27e051a1f2b" />
 
 
-kl
-kl
-
 20. Sequence Recognition
+<img width="665" height="508" alt="Screenshot 2026-09-28 232704" src="https://github.com/user-attachments/assets/da421e79-0d58-4b67-89b7-ef5e77edb937" />
+<img width="663" height="445" alt="Screenshot 2026-09-28 232721" src="https://github.com/user-attachments/assets/6e710774-6758-4e9d-b254-80bfbd1873be" />
+<img width="666" height="564" alt="Screenshot 2026-09-28 232731" src="https://github.com/user-attachments/assets/74985b1a-3826-422b-bbf1-c0da337178d5" />
+
 
 21. Q8: Design A Mealy FSM
 
