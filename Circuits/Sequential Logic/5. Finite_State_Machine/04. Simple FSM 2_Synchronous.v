@@ -1,8 +1,8 @@
 module top_module(
-    input clk,
-    input reset,    // Synchronous reset to OFF
-    input j,
-    input k,
+    input  clk,
+    input  reset,    // Synchronous reset to OFF
+    input  j,
+    input  k,
     output out); //  
 
     parameter OFF=0, ON=1; 
