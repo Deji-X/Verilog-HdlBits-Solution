@@ -1,8 +1,8 @@
 //Fsm3onehot
 
 module top_module(
-  input in,
-  input [3:0] state,
+  input  in,
+  input  [3:0] state,
   output [3:0] next_state,
   output out
 );
