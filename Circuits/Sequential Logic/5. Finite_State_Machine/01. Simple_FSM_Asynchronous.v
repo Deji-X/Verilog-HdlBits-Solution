@@ -1,7 +1,7 @@
 module top_module(
-  input clk,
-  input areset, //Asynchronous reset to state B
-  input in,
+  input  clk,
+  input  areset, //Asynchronous reset to state B
+  input  in,
   output out
 );
 
