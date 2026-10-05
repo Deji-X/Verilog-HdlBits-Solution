@@ -4,9 +4,9 @@ insight.
 I'll post another solution below, I can think of 3 possible behaviourals offhand.
 */
 module top_module(
-    input clk,
-    input in,
-    input areset,
+    input  clk,
+    input  in,
+    input  areset,
     output out
 );
 
