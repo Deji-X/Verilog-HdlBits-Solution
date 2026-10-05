@@ -1,8 +1,8 @@
 module top_module(
-    input clk,
-    input areset,    // Asynchronous reset to OFF
-    input j,
-    input k,
+    input  clk,
+    input  areset,    // Asynchronous reset to OFF
+    input  j,
+    input  k,
     output out); //  
 
     parameter OFF=0, ON=1; 
