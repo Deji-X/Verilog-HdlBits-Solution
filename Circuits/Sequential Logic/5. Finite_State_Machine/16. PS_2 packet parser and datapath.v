@@ -1,7 +1,7 @@
 module top_module(
-  input clk,
-  input [7:0] in,
-  input reset,  // Synchronous reset
+  input  clk,
+  input  [7:0] in,
+  input  reset,  // Synchronous reset
   output [23:0] out_bytes,
   output done
 );
