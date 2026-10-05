@@ -1,10 +1,10 @@
-// Note the Verilog-1995 modyle declaration syntax here:
+// Note the Verilog-1995 module declaration syntax here:
 module top_module(clk, reset, in, out);
-  input clk;
-  input reset;
-  input in;
+  input  clk;
+  input  reset;
+  input  in;
   output out;
-  reg out;
+  reg    out;
 
   parameter A=0, B=1;
 
