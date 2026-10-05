@@ -1,7 +1,7 @@
 module top_module(
-    input clk,
-    input in,
-    input reset,
+    input  clk,
+    input  in,
+    input  reset,
     output out); //
     
     parameter A=0, B=1, C=2, D=3;
